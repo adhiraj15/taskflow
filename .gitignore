@@ -1,1 +1,30 @@
 venv/
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials
+*_credentials
+secrets/
+
+# Kubernetes local secrets and kubeconfig
+kubeconfig
+kubeconfig-*
+kubernetes/secret.yaml
+kubernetes/secret.local.yaml
+monitoring/*secret*.yaml
+
+# Terraform local files and state
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+
+# Logs
+*.log

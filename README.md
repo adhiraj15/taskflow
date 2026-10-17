@@ -1,32 +1,79 @@
-# TaskFlow
+# TaskFlow — Cloud & DevOps Project
 
-TaskFlow is a simple Python Flask application created to practise DevOps tools.
+TaskFlow is a simple Python Flask application created to practise a fresher-level DevOps workflow.
 
 ## Tools Used
+
 - Linux
 - Git and GitHub
+- AWS EC2 (practice environment)
 - Docker
 - Jenkins and CI/CD
 - Kubernetes with Minikube
-- AWS EC2 (practice environment)
+- Helm
+- Prometheus and Grafana
 
 ## What I Practised
+
 - Managed application code using Git and GitHub.
 - Created a Docker image using a Dockerfile.
 - Configured a Jenkins pipeline and tested a GitHub webhook.
-- Deployed the application using Kubernetes.
+- Deployed and managed the application using Kubernetes.
 - Practised ConfigMaps, Secrets, health checks, persistent storage and autoscaling.
+- Monitored Kubernetes CPU, memory and namespace resource usage using Prometheus and Grafana.
 
-## Project Files
-- `app/` – Python application code
-- `Dockerfile` – Instructions to build the Docker image
-- `Jenkinsfile` – Jenkins pipeline configuration
-- `kubernetes/` – Kubernetes configuration files
+## Project Workflow
 
-## Notes
+1. Maintain application source code in GitHub.
+2. Build a Docker image for the application.
+3. Use Jenkins to automate the CI/CD pipeline.
+4. Deploy the application using Kubernetes.
+5. Configure application settings, storage and scaling.
+6. Monitor Kubernetes resources through Grafana dashboards.
+
+## Repository Structure
+
+- `app/` — Python Flask application and dependencies
+- `Dockerfile` — instructions for building the Docker image
+- `Jenkinsfile` — Jenkins pipeline configuration
+- `kubernetes/` — Deployment, Service, ConfigMap, Secret example, PVC and HPA manifests
+- `monitoring/` — Prometheus and Grafana configuration and documentation
+- `docs/screenshots/` — selected project screenshots
+
+## Kubernetes Features Practised
+
+- Pods, Deployments and Services
+- Scaling, rolling updates and rollback
+- ConfigMaps and Kubernetes Secrets
+- PersistentVolumeClaims
+- Resource requests, limits and HPA
+
+## Monitoring
+
+Prometheus collects metrics, while Grafana displays monitoring dashboards.
+
+The Kubernetes / Compute Resources / Cluster dashboard was used to view CPU utilisation, memory utilisation, resource requests and limits, and namespace-wise CPU usage.
+
+See [Monitoring Documentation](monitoring/README.md) and the configuration in `monitoring/values.yaml`.
+
+## Screenshots
+
+### Grafana Kubernetes Cluster Overview
+
+![Grafana cluster overview](docs/screenshots/grafana-cluster-overview.png)
+
+### Namespace-wise Resource Usage
+
+![Grafana namespace usage](docs/screenshots/grafana-namespace-usage.png)
+
+## Notes and Security
+
 - The application runs on port `5000`.
 - The Kubernetes practice environment uses Minikube.
-- Do not upload real passwords, tokens or secret keys.
+- Never commit real passwords, tokens, private keys or Kubernetes Secret values.
+- Use SSH tunnelling for private dashboards.
+- Review repository contents before making the repository public.
 
 ## Learning Goal
-To gain practical experience with basic DevOps tools and understand how an application is built, deployed and managed.
+
+Gain practical experience with core DevOps tools and be able to explain how the application is built, deployed, monitored and troubleshot.
