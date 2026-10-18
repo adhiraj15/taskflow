@@ -58,6 +58,8 @@ See [Monitoring Documentation](monitoring/README.md) and the configuration in `m
 
 ## Screenshots
 
+Browse all Jenkins and Grafana screenshots in the [Project Screenshot Gallery](docs/screenshots/README.md).
+
 ### Grafana Kubernetes Cluster Overview
 
 ![Grafana cluster overview](docs/screenshots/grafana-cluster-overview.png)
