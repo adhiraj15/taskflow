@@ -26,8 +26,8 @@ TaskFlow is a simple Python Flask application created to practise a fresher-leve
 
 1. Maintain application source code in GitHub.
 2. Build a Docker image for the application.
-3. Use Jenkins to automate the CI/CD pipeline.
-4. Deploy the application using Kubernetes.
+3. Use Jenkins to automate GitHub checkout, Docker build/run, and the application health check.
+4. Practise Kubernetes deployment separately using the manifests in the `kubernetes/` directory.
 5. Configure application settings, storage and scaling.
 6. Monitor Kubernetes resources through Grafana dashboards.
 
