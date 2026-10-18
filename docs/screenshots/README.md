@@ -22,3 +22,8 @@ Build #14 completed successfully. The pipeline checked out code from GitHub, bui
 
 ### Namespace Resource Usage
 <img src="./grafana-namespace-usage.png" width="800" alt="Grafana Namespace Usage">
+
+## 3. Kubernetes Deployment
+
+### TaskFlow Pods, Deployment, and Health Check
+<img src="./kubernetes-taskflow-status.png" width="800" alt="TaskFlow Kubernetes status and HTTP 200 health check">
