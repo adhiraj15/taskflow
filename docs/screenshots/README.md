@@ -1,4 +1,4 @@
-﻿# TaskFlow — Project Screenshots
+# TaskFlow — Project Screenshots
 
 Visual evidence of the TaskFlow DevOps project, arranged in implementation order.
 
@@ -15,15 +15,15 @@ Visual evidence of the TaskFlow DevOps project, arranged in implementation order
 
 Build #14 completed successfully. The pipeline checked out code from GitHub, built the Docker image, ran the TaskFlow container, and passed the application health check.
 
-## 2. Monitoring — Prometheus & Grafana
+## 2. Kubernetes Deployment
+
+### TaskFlow Pods, Deployment, and Health Check
+<img src="./kubernetes-taskflow-status.png" width="800" alt="TaskFlow Kubernetes status and HTTP 200 health check">
+
+## 3. Monitoring — Prometheus & Grafana
 
 ### Kubernetes Cluster Overview
 <img src="./grafana-cluster-overview.png" width="800" alt="Grafana Cluster Overview">
 
 ### Namespace Resource Usage
 <img src="./grafana-namespace-usage.png" width="800" alt="Grafana Namespace Usage">
-
-## 3. Kubernetes Deployment
-
-### TaskFlow Pods, Deployment, and Health Check
-<img src="./kubernetes-taskflow-status.png" width="800" alt="TaskFlow Kubernetes status and HTTP 200 health check">
